@@ -1,11 +1,13 @@
 // Dependencies
 const express = require('express')
-const { default: mongoose } = require('mongoose')
+const cors = require('cors')
+const mongoose = require('mongoose')
+const app = express()
 
 // Configs
 require('dotenv').config()
 const PORT = process.env.PORT
-const app = express()
+
 
 // Middleware
 app.use(express.json())
