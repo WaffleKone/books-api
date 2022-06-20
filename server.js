@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.send('this is the index page')
 })
 
+// Books
+const booksController = require('./controllers/books_controller')
+app.use('/books', booksController)
+
 // Listening
 app.listen(PORT, () =>{
     console.log('nomming at port', PORT)
